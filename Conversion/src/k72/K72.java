@@ -2,7 +2,7 @@ package k72;
 
 // method Scanner
 //input of fahrenheit for conversion into cels
-import java.util.Scanner; 
+import java.util.*; 
 
 public class K72 {
     
@@ -16,13 +16,13 @@ public class K72 {
         double fahrenheit = input.nextDouble();
         
         // output of result into celsius
-        System.out.printf(""
-           + "\nResult of value in celsius: %.2f%n\n", result(fahrenheit));
+        System.out.printf(
+         "%nResult of value in celsius: %.2f° C%n", result(fahrenheit));
     } // End of method determineResult
     
     // Calculates and returns the result celsius
     private static double result (double fahrenheit) {
-    
+       
         double celsius = 5.0 / 9.0 * (fahrenheit - 32);
         return celsius;
     } // End of method result
